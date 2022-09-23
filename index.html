@@ -13,6 +13,11 @@
     <script>
       console.log("Saoko papi Saoko...");
 
+      function colorTitulo(){
+        console.log("Pulso el botón de generation");
+        document.getElementById("generation").style.color = "blue"
+      }
+
     </script>
 </head>
 
@@ -58,9 +63,9 @@
       <div class="container">
         <div class="row">
             <div class="col">
-            <h1>Estar en Generation es...</h1>
+            <h1>Estar en <span id="generation">Generation</span> es...</h1>
             <p>tener que conseguir muchos vestuarios para los veirnes temáticos.</p>
-            <p><a href="https://mexico.generation.org/" 
+            <p onclick="colorTitulo()"><a href="https://mexico.generation.org/" 
                 target="_black"
                 class="btn btn-danger"
                 >Visita Generation</a></p>
